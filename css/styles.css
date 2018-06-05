@@ -1,0 +1,209 @@
+body{
+    font: 16px 'Raleway', 'Helvetica', sans-serif;
+    color: black;
+}
+
+h2{
+    color:#717171;
+    font-size:24px;
+}
+
+h3{
+    color:#717171;
+    font-size:20px;
+}
+
+h4{
+   color:#717171;
+    font-size:16px;
+}
+
+
+
+hr{
+    border: 1px solid #e8e8e8;
+    height:0px;
+    width:30%;
+}
+div.wrapper{
+
+    margin-left:15%;
+    margin-right:15%;
+   /* border:1px solid darkgray;*/
+
+
+}
+
+div.main-image {
+text-align:center;
+}
+
+div.main-image > img{
+    max-width:100%;
+}
+
+div.main-menu{
+    text-align:center;
+}
+
+ul.menu{
+    list-style-type: none;
+    padding:0px;
+    color: #939393;
+    line-height:2em;
+
+
+}
+
+ul.menu a{
+        color:#717171;
+    text-decoration:none;
+
+}
+
+ul.menu > li {
+ display:inline;
+    text-transform: lowercase;
+
+
+}
+
+a{
+ color:#717171;
+    text-decoration:underline;
+}
+
+a:hover{
+    color: #767676;
+}
+
+ul.menu > li:not(:last-of-type):after{
+    content:" / ";
+    color:#717171;
+    font-weight:normal;
+}
+
+ul.menu > li.active > a{
+    color: darkred;
+    font-weight:bold;
+    font-size:20px;
+    text-decoration:none;
+}
+
+ul.menu > li > a:hover{
+    text-decoration:underline;
+    color: #767676;
+}
+
+div.main-content{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+p.center{
+    text-align:center;
+}
+
+p.bold{
+    font-weight:bold;
+}
+div.main-content{
+    text-align:left;
+}
+
+
+
+div#updated{
+    margin-top:40px;
+    font-size:12px;
+    text-align:center;
+    margin-bottom:20px;
+    text-align:right;
+}
+div.footer{
+    font-size:12px;
+    text-align:center;
+    color:#939393;
+    margin-bottom:40px;
+
+}
+
+div.main-content + div.footer{
+
+    margin-top:40px;
+}
+
+div#photos{
+    text-align:center;
+
+}
+
+div#photos a img{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px
+}
+
+div#videos{
+    text-align:center;
+
+}
+div#videos iframe{
+    height:375px;
+    width:500px;
+}
+
+table#samples{
+    width:100%;
+    line-height:1.2em;
+}
+
+table#samples tr{
+    height:3em;
+}
+
+table#samples td{
+    text-align:left;
+    vertical-align:top;
+}
+table#samples tr td:first-of-type{
+       width:78%;
+    padding-right:10%;
+
+}
+
+table#samples tr td:last-of-type{
+    width:20%;
+    text-align:left;
+}
+
+@media screen and (min-width:600px) and (max-width: 1000px) {
+    div.wrapper{
+           margin-left:10%;
+        margin-right:10%;
+    }
+}
+
+@media screen  and (min-width:200px) and (max-width: 599px){
+        div.wrapper{
+           margin-left:2%;
+        margin-right:2%;
+    }
+
+    div.main-content{
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    div#videos iframe{
+        width:250px;
+        height:188px;
+    }
+
+    div#photos{
+        text-align:center;
+    }
+    div#photos a img{
+        margin-right:0px;
+    }
+}
